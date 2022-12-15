@@ -17,6 +17,9 @@ public class CharacterSwap {
         // вывод последного символа строки
         initial = txt.charAt((txt.length()-1));
         System.out.println("Последняя буква: " + initial);
+        // замена всех символов "о", на символы "а"
+        txt = txt.replace('о','а');
+        System.out.println("Строка: " + txt);
 
 
     }
