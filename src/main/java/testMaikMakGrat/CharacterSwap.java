@@ -14,6 +14,9 @@ public class CharacterSwap {
         // вывод первого символа строки
         char initial = txt.charAt(0);
         System.out.println("Первая буква: " + initial);
+        // вывод последного символа строки
+        initial = txt.charAt((txt.length()-1));
+        System.out.println("Последняя буква: " + initial);
 
 
     }
