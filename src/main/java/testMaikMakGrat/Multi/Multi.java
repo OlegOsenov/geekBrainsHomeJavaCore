@@ -8,5 +8,6 @@ public class Multi {
         System.out.println(Data.txt);
         Data.greeting();
         Draw.line();
+
     }
 }
