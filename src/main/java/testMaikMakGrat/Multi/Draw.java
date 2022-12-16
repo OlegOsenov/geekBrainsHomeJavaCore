@@ -1,4 +1,7 @@
 package testMaikMakGrat.Multi;
 
-public class Draw {
+class Draw {
+    public static void line() {
+        System.out.println("____________________________");
+    }
 }
