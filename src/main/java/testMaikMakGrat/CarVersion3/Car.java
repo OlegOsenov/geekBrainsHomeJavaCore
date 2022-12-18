@@ -14,10 +14,12 @@ public class Car {
         color = paint;
         bodyType = style;
     }
+    public void getCar()
+        {
+            System.out.println(maker + " цвет " + color);
+            System.out.println(maker + " тип кузова " + bodyType);
+            System.out.println(maker + "  " + accelerate() + "\n");
+        }
 
-    {
-        System.out.println(maker + " цвет " + color);
-        System.out.println(maker + " тип кузова " + bodyType);
-        System.out.println(maker + "  " + accelerate() + "\n");
-    }
+
 }
