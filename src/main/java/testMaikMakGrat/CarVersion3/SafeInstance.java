@@ -8,5 +8,7 @@ public class SafeInstance {
         Car Bentley = new Car();
         Bentley.setCar("Бентли","Зеленый","Седан");
         Bentley.getCar();
+        Car Ferrari = new Car();
+        Ferrari.setCar("Феррари", "Красный","Спортивный");
     }
 }
