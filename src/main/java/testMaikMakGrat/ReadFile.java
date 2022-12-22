@@ -15,14 +15,13 @@ public class ReadFile {
                 System.out.println(line);
                 buffer.close();
             }
-
-
         }
         catch (IOException e){
-            System.out.println("Произошла ошибка");
+            System.out.println("Произошла ошибка " + e.getMessage());
         }
 
 
 
     }
+
 }
