@@ -11,5 +11,8 @@ public class List {
         list.add("Charli");
         list.add("Beta");
         System.out.println("Список " + list);
+        System.out.println("Заменяем: " + list.get(1) + "\n");
+        list.set(1,"Bravo");
+        list.forEach((x) -> System.out.println("Элемент: " + x));
     }
 }
