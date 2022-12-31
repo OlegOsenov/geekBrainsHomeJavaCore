@@ -1,7 +1,8 @@
 package testEasyCodeRu.ShowSum;
 
 public class Lection6Dz {
-    private static final String user = "Оброжка";
+    private static final String USER = "Оброжка";
+
     public static void main(String[] args) {
 
         String food = "Мясо";
@@ -12,7 +13,7 @@ public class Lection6Dz {
     }
 
     private static void doFood(String food) {
-        System.out.println(user + " покушал " + food);
+        System.out.println(USER + " покушал " + food);
     }
 
 }
