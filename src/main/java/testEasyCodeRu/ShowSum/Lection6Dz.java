@@ -1,14 +1,17 @@
 package testEasyCodeRu.ShowSum;
 
 public class Lection6Dz {
+    private static final String user = "Оброжка";
     public static void main(String[] args) {
-        final String user = "Оброжка";
+
         String food = "Мясо";
-        doFood(food,user);
+        doFood(food);
+        food = "Яблоко";
+        doFood(food);
 
     }
 
-    private static void doFood(String food,String user) {
+    private static void doFood(String food) {
         System.out.println(user + " покушал " + food);
     }
 
