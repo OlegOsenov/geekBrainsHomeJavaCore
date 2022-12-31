@@ -3,35 +3,27 @@ package testEasyCodeRu.ShowSum;
 public class Divide {
 
     public static void main(String[] args) {
-
-        print(showDivide(10, 4.5f));
-        print(showDivide(10, Double.parseDouble("4.25")));
+        showDivide(10, 0);
 
     }
 
-    private static float showDivide(int i, float i1) {
-        return (i / i1);
+
+    private static void showDivide(int i, int i1) {
+        if (i1 == 0) {
+            print("second argument is zero");
+        } else {
+            print(i / i1);
+        }
     }
 
-    private static double showDivide(int i, double i1) {
-        return (i / i1);
-    }
-
-    private static int showDivide(int i, int i1) {
-        return (i / i1);
-    }
-
-    private static void print(float numb1) {
-        System.out.println(numb1);
-    }
 
     private static void print(int numb1) {
         System.out.println(numb1);
     }
 
-    private static void print(double numb1) {
+
+    private static void print(String numb1) {
         System.out.println(numb1);
     }
-
 
 }
