@@ -45,8 +45,18 @@ public class Home {
         System.out.println("Задача №11");
         print(equalsToString("Олег","Олег"));
         print(equalsToString("Олег",""));
+        System.out.println("---------------------------");
+        System.out.println("Задача №12");
+        stringCheck("Олег");
+        stringCheck("http:// oleg.osenov");
+        stringCheck("oleg.osenov http://");
 
 
+
+    }
+    // Задача 12
+    private static void stringCheck(String str){
+        print(str.startsWith("http://") ? "Строка содержит http:// " + str : "Строки с http нету");
 
     }
     // Задача 11
