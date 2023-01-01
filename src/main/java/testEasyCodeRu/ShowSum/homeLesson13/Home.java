@@ -8,6 +8,17 @@ public class Home {
         print("----------------------------------------");
         print("Задание 2 :");
         multiArray(new int[]{3,3,3,3,3,4,5});
+        print("----------------------------------------");
+        print("Задание 3 :");
+        arrayNegativ(new int[]{1,-2,3,-4,5,6,7,-7});
+    }
+
+    private static void arrayNegativ(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 0){
+                print(array[i]);
+            }
+        }
     }
 
     private static void multiArray(int[] ints) {
