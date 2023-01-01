@@ -4,18 +4,31 @@ public class Home {
 
     public static void main(String[] args) {
         print("Задание 1 :");
-        arrayMin(new int[]{1,2,3,4,5,6,7,-7});
+        arrayMin(new int[]{1, 2, 3, 4, 5, 6, 7, -7});
         print("----------------------------------------");
         print("Задание 2 :");
-        multiArray(new int[]{3,3,3,3,3,4,5});
+        multiArray(new int[]{3, 3, 3, 3, 3, 4, 5});
         print("----------------------------------------");
         print("Задание 3 :");
-        arrayNegativ(new int[]{1,-2,3,-4,5,6,7,-7});
+        arrayNegativ(new int[]{1, -2, 3, -4, 5, 6, 7, -7});
+        print("----------------------------------------");
+        print("Задание 4 :");
+        arrayCheck(1, new int[]{1, -2, 3, -4, 5, 1, 8, -7});
+    }
+
+    private static void arrayCheck(int check, int[] array) {
+        int count = 0;
+        for (int j = 0; j < array.length; j++) {
+            if (check == array[j]) {
+                count++;
+            }
+        }
+        print("Найденно совпадение : " + count);
     }
 
     private static void arrayNegativ(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] < 0){
+            if (array[i] < 0) {
                 print(array[i]);
             }
         }
@@ -27,24 +40,26 @@ public class Home {
             multi = multi * ints[i];
 
         }
-        print("Произведение всех чисел в массиве = "+ multi);
+        print("Произведение всех чисел в массиве = " + multi);
 
     }
 
     // Задание 1
-    private static void arrayMin(int[] array){
+    private static void arrayMin(int[] array) {
         int min = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] < min){
+            if (array[i] < min) {
                 min = array[i];
             }
         }
         print("Минимальное значение в массиве :" + min);
     }
-    private static void print(String msg){
+
+    private static void print(String msg) {
         System.out.println(msg);
     }
-    private static void print(int msg){
+
+    private static void print(int msg) {
         System.out.println(msg);
     }
 
