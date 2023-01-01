@@ -50,8 +50,25 @@ public class Home {
         stringCheck("Олег");
         stringCheck("http:// oleg.osenov");
         stringCheck("oleg.osenov http://");
+        System.out.println("---------------------------");
+        System.out.println("Задача №13");
+        arithmeticMean(5,3,4,5,2);
+        arithmeticMean(5,5,5,5,5);
+        arithmeticMean(4,4,5,5,4);
 
 
+
+    }
+    // Задача 13
+    private static void arithmeticMean(int a, int b, int c, int d, int e){
+        int result = (a + b + c + d + e)/5;
+        if (result == 5){
+            print("Отличник");
+        } else if (result >= 4){
+            print("Хорошист");
+        }else {
+            print("Удовлетворительно");
+        }
 
     }
     // Задача 12
