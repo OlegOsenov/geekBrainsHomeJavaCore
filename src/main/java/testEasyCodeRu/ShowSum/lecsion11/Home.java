@@ -2,6 +2,7 @@ package testEasyCodeRu.ShowSum.lecsion11;
 
 public class Home {
     private static int counter = 0;
+    private static int gamerNumber = 1;
 
     public static void main(String[] args) {
         System.out.println("Задание 1:");
@@ -77,8 +78,22 @@ public class Home {
         print(unlockLesson(1, true));
         print(unlockLesson(13, false));
         print(unlockLesson(103, true));
+        System.out.println("---------------------------");
+        System.out.println("Задача №18");
+        games(1, "step1");
+        games(1, "step2");
+        games(2, "step3");
+        games(2, "step4");
+        games(1, "step5");
 
 
+    }
+    // Задача 18
+    private static void games(int gamer, String str){
+        if (gamer == gamerNumber){
+            print(str);
+            gamerNumber = gamerNumber == 1 ? 2:1;
+        }
     }
 
     // Задача 17
