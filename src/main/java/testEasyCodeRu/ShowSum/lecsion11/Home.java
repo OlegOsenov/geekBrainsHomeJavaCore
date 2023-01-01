@@ -3,6 +3,7 @@ package testEasyCodeRu.ShowSum.lecsion11;
 public class Home {
     private static int counter = 0;
     private static int gamerNumber = 1;
+    private static int gamerNumber1StepCount = 0;
 
     public static void main(String[] args) {
         System.out.println("Задание 1:");
@@ -85,8 +86,33 @@ public class Home {
         games(2, "step3");
         games(2, "step4");
         games(1, "step5");
+        System.out.println("---------------------------");
+        System.out.println("Задача №19");
+        gamerSetTwo(1, "step1");
+        gamerSetTwo(1, "step2");
+        gamerSetTwo(2, "step3");
+        gamerSetTwo(2, "step4");
+        gamerSetTwo(1, "step5");
 
 
+    }
+    // Задача 19
+    private static void gamerSetTwo(int playerNumberLocal, String step){
+        if (playerNumberLocal == gamerNumber){
+            if (playerNumberLocal ==1){
+                if (gamerNumber1StepCount == 0){
+                    gamerNumber1StepCount++;
+                    print(step);
+                } else if (gamerNumber1StepCount == 1) {
+                    gamerNumber1StepCount = 0;
+                    print(step);
+                    gamerNumber = 2;
+                }
+            } else {
+                print(step);
+                gamerNumber = 1;
+            }
+        }
     }
     // Задача 18
     private static void games(int gamer, String str){
