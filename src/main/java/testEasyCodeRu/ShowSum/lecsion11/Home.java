@@ -1,6 +1,7 @@
 package testEasyCodeRu.ShowSum.lecsion11;
 
 public class Home {
+    private static int counter = 0;
 
     public static void main(String[] args) {
         System.out.println("Задание 1:");
@@ -22,8 +23,63 @@ public class Home {
         whereToGo(19);
         whereToGo(17);
         whereToGo(170);
+        System.out.println("---------------------------");
+        System.out.println("Задача №7");
+        noLoveAntoniDen("Антон");
+        noLoveAntoniDen("Олег");
+        noLoveAntoniDen("Денис");
+        System.out.println("---------------------------");
+        System.out.println("Задача №8");
+        increment();
+        increment();
+        increment();
+        increment();
+        increment();
+        increment();
+        System.out.println("---------------------------");
+        System.out.println("Задача №9");
+        waterCondition(100);
+        waterCondition(0);
+        waterCondition(-3);
+        System.out.println("---------------------------");
+        System.out.println("Задача №11");
+        print(equalsToString("Олег","Олег"));
+        print(equalsToString("Олег",""));
 
 
+
+    }
+    // Задача 11
+    private static boolean equalsToString(String str1, String str2){
+        return !str1.isEmpty() && !str2.isEmpty() && str1.equals(str2);
+    }
+    // Задача №9
+    private static void waterCondition(int a){
+        if (a >=100){
+            print("Пар");
+        }else if (a >=0){
+            print("Вода");
+        }else {
+            print("Лед");
+        }
+    }
+    //Задача №8
+    private static void increment(){
+        if (counter < 5){
+            print("Вызов метода increment");
+            counter++;
+        }else {
+            print("Метод инкремент превысил количество вызовов");
+        }
+    }
+
+    // Задача №7
+
+    private static void noLoveAntoniDen(String name){
+        String antoni = "Антон";
+        String den = "Денис";
+        print(antoni.equalsIgnoreCase(name) || den.equalsIgnoreCase(name) ? "Добро пожаловать отсюда " + name :
+                "Добро пожаловать " + name);
 
     }
     // Задание №6
