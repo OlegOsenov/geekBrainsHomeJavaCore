@@ -96,11 +96,12 @@ public class Home {
 
 
     }
+
     // Задача 19
-    private static void gamerSetTwo(int playerNumberLocal, String step){
-        if (playerNumberLocal == gamerNumber){
-            if (playerNumberLocal ==1){
-                if (gamerNumber1StepCount == 0){
+    private static void gamerSetTwo(int playerNumberLocal, String step) {
+        if (playerNumberLocal == gamerNumber) {
+            if (playerNumberLocal == 1) {
+                if (gamerNumber1StepCount == 0) {
                     gamerNumber1StepCount++;
                     print(step);
                 } else if (gamerNumber1StepCount == 1) {
@@ -114,22 +115,23 @@ public class Home {
             }
         }
     }
+
     // Задача 18
-    private static void games(int gamer, String str){
-        if (gamer == gamerNumber){
+    private static void games(int gamer, String str) {
+        if (gamer == gamerNumber) {
             print(str);
-            gamerNumber = gamerNumber == 1 ? 2:1;
+            gamerNumber = gamerNumber == 1 ? 2 : 1;
         }
     }
 
     // Задача 17
     private static boolean unlockLesson(int number, boolean isUserPremium) {
-       if (number < 1 || number > 100){
-           print("Номер урока не валидный");
-           return false;
-       }else {
-           return isUserPremium || number == 1;
-       }
+        if (number < 1 || number > 100) {
+            print("Номер урока не валидный");
+            return false;
+        } else {
+            return isUserPremium || number == 1;
+        }
     }
 
     // Задача 16
