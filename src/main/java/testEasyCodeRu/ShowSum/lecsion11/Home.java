@@ -62,12 +62,27 @@ public class Home {
         ivanIvanov("Олег", "Осенов");
         System.out.println("---------------------------");
         System.out.println("Задача №15");
-        print(module( 1));
-        print(module( 0));
-        print(module( -5));
+        print(module(1));
+        print(module(0));
+        print(module(-5));
+        System.out.println("---------------------------");
+        System.out.println("Задача №16");
+        isRectangle(5,5,5,5);
+        isRectangle(5,6,5,6);
+        isRectangle(5,4,5,6);
 
 
+    }
 
+    // Задача 16
+    private static void isRectangle(int AB, int BC, int CD, int DA) {
+        if (AB == BC && BC == CD && CD == DA){
+            print("Квадрат");
+        } else if (AB == CD && BC == DA) {
+            print("Прямоугольник");
+        }else {
+            print("Четырехугольник");
+        }
     }
     // Задача 15
 
