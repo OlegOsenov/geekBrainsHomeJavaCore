@@ -60,8 +60,19 @@ public class Home {
         ivanIvanov("Иван", "Иванов");
         ivanIvanov("Иван", "Осенов");
         ivanIvanov("Олег", "Осенов");
+        System.out.println("---------------------------");
+        System.out.println("Задача №15");
+        print(module( 1));
+        print(module( 0));
+        print(module( -5));
 
 
+
+    }
+    // Задача 15
+
+    private static int module(int number) {
+        return number > 0 ? number : number * (-1);
     }
 
     //Задача 14
