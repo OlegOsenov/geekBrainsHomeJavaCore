@@ -17,9 +17,24 @@ public class Home {
         System.out.println("---------------------------");
         System.out.println("Задача №5");
         accessToContent(19);
+        System.out.println("---------------------------");
+        System.out.println("Задача №6");
+        whereToGo(19);
+        whereToGo(17);
+        whereToGo(170);
 
 
 
+    }
+    // Задание №6
+    private static void whereToGo (int age){
+        if (age < 0 || age > 110){
+            print("Вы бот");
+        } else if (age >= 18){
+            print("Вам по взрослым делам");
+        } else {
+                print("Вам учиться");
+        }
     }
     //Задание 5
     private static void accessToContent(int age){
