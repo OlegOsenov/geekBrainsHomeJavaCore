@@ -67,20 +67,37 @@ public class Home {
         print(module(-5));
         System.out.println("---------------------------");
         System.out.println("Задача №16");
-        isRectangle(5,5,5,5);
-        isRectangle(5,6,5,6);
-        isRectangle(5,4,5,6);
+        isRectangle(5, 5, 5, 5);
+        isRectangle(5, 6, 5, 6);
+        isRectangle(5, 4, 5, 6);
+        System.out.println("---------------------------");
+        System.out.println("Задача №17");
+        print(unlockLesson(1, false));
+        print(unlockLesson(12, true));
+        print(unlockLesson(1, true));
+        print(unlockLesson(13, false));
+        print(unlockLesson(103, true));
 
 
     }
 
+    // Задача 17
+    private static boolean unlockLesson(int number, boolean isUserPremium) {
+       if (number < 1 || number > 100){
+           print("Номер урока не валидный");
+           return false;
+       }else {
+           return isUserPremium || number == 1;
+       }
+    }
+
     // Задача 16
     private static void isRectangle(int AB, int BC, int CD, int DA) {
-        if (AB == BC && BC == CD && CD == DA){
+        if (AB == BC && BC == CD && CD == DA) {
             print("Квадрат");
         } else if (AB == CD && BC == DA) {
             print("Прямоугольник");
-        }else {
+        } else {
             print("Четырехугольник");
         }
     }
