@@ -16,12 +16,14 @@ public class Home {
         workHome(false,false);
         System.out.println("---------------------------");
         System.out.println("Задача №5");
+        accessToContent(19);
 
 
 
     }
     //Задание 5
-    private static void accessToContent(){
+    private static void accessToContent(int age){
+        print(age > 18 ? "Доступ к контенту разрешен" : "Доступ запрещен");
 
     }
 
