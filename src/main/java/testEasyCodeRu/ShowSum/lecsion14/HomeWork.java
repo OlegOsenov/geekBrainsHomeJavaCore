@@ -23,10 +23,27 @@ public class HomeWork {
         print("--------------------------------------------");
         print("Задание 6:");
         arrayRevers(new int[]{1, 2, 3, 4, 5});
-        print("--------------------------------------------");
+        print("\n--------------------------------------------");
         print("Задание 7:");
         arrayStringThis(new String[]{"this", "oleg", "dog", "this"});
+        print("\n--------------------------------------------");
+        print("Задание 8:");
+        arrayRevMin(new int[]{1, 2, 3, 4, 5});
+        arrayRevMin(new int[]{1, 2, 3, 4, 0});
 
+
+    }
+
+    private static void arrayRevMin(int[] array) {
+        isEmptyArray(array);
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 0) {
+                array[i] = -array[i];
+
+            }
+            printF("[" + array[i] + "]");
+
+        }
     }
 
     private static void arrayStringThis(String[] strings) {
@@ -117,6 +134,7 @@ public class HomeWork {
             print("Массив пустой");
         }
     }
+
     private static void isEmptyArray(String[] array) {
         if (array.length == 0) {
             print("Массив пустой");
