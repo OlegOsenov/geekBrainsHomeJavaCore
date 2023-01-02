@@ -17,7 +17,37 @@ public class HomeWork {
         print("--------------------------------------------");
         print("Задание 4:");
         arrayMinMax(new int[]{1, 2, 3, 4, 5, -6});
+        print("--------------------------------------------");
+        print("Задание 5:");
+        arrayRepeatSearch(new int[]{5, 5, 5, 8, 8});
+        print("--------------------------------------------");
+        print("Задание 6:");
+        arrayRevers(new int[]{1, 2, 3, 4, 5});
 
+    }
+
+    private static void arrayRevers(int[] array) {
+        for (int i = array.length - 1; i >= 0; i--) {
+            printF("[" + array[i] + "]");
+        }
+
+    }
+
+    // Задание 5 до решить
+    private static void arrayRepeatSearch(int[] array) {
+        isEmptyArray(array);
+        int count = 0;
+        int temp = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    temp = array[i];
+                    count++;
+                    print(array[j]);
+                }
+            }
+        }
+        print("Число " + temp + " повторы " + count);
     }
 
     private static void arrayMinMax(int[] array) {
@@ -48,7 +78,7 @@ public class HomeWork {
     private static void checkMultiple(int check, int[] array) {
         int temp = 0;
         isEmptyArray(array);
-        for  (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] % check == 0) {
                 temp = array[i];
                 printF("[" + temp + "]");
