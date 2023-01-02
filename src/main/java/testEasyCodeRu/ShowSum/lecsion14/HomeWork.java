@@ -14,6 +14,25 @@ public class HomeWork {
         print("--------------------------------------------");
         print("Задание 3:");
         fibonacciCheck(new int[]{1, 2, 3, 4, 5, 6});
+        print("--------------------------------------------");
+        print("Задание 4:");
+        arrayMinMax(new int[]{1, 2, 3, 4, 5, -6});
+
+    }
+
+    private static void arrayMinMax(int[] array) {
+        isEmptyArray(array);
+        int min = array[0];
+        int max = array[0];
+        for (int i : array) {
+            if (i < min) {
+                min = i;
+            }
+            if (i > max) {
+                max = i;
+            }
+        }
+        print("min = " + min + ", max = " + max + ". Разница между min и max = " + (max - min));
 
     }
 
@@ -29,7 +48,7 @@ public class HomeWork {
     private static void checkMultiple(int check, int[] array) {
         int temp = 0;
         isEmptyArray(array);
-        for (int i = 0; i < array.length; i++) {
+        for  (int i = 0; i < array.length; i++) {
             if (array[i] % check == 0) {
                 temp = array[i];
                 printF("[" + temp + "]");
