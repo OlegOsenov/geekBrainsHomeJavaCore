@@ -14,6 +14,19 @@ public class Home {
         print("----------------------------------------");
         print("Задание 4 :");
         arrayCheck(1, new int[]{1, -2, 3, -4, 5, 1, 8, -7});
+        print("----------------------------------------");
+        print("Задание 5 :");
+        arrayIsEmpty(new String[]{"", "1", "", "2"});
+    }
+
+    private static void arrayIsEmpty(String[] arrStr) {
+        int count = 0;
+        for (int i = 0; i < arrStr.length; i++) {
+            if (arrStr[i].isEmpty()) {
+                count++;
+            }
+        }
+        print("Количество пустых строк в массиве: " + count);
     }
 
     private static void arrayCheck(int check, int[] array) {
