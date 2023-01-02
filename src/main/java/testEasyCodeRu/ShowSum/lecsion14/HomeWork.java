@@ -23,7 +23,20 @@ public class HomeWork {
         print("--------------------------------------------");
         print("Задание 6:");
         arrayRevers(new int[]{1, 2, 3, 4, 5});
+        print("--------------------------------------------");
+        print("Задание 7:");
+        arrayStringThis(new String[]{"this", "oleg", "dog", "this"});
 
+    }
+
+    private static void arrayStringThis(String[] strings) {
+        isEmptyArray(strings);
+        String str = "this";
+        for (int i = 0; i < strings.length; i++) {
+            if (str.equals(strings[i])) {
+                printF("[" + i + "]");
+            }
+        }
     }
 
     private static void arrayRevers(int[] array) {
@@ -100,6 +113,11 @@ public class HomeWork {
     }
 
     private static void isEmptyArray(int[] array) {
+        if (array.length == 0) {
+            print("Массив пустой");
+        }
+    }
+    private static void isEmptyArray(String[] array) {
         if (array.length == 0) {
             print("Массив пустой");
         }
